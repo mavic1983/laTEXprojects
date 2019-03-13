@@ -1,0 +1,242 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\vspace{3mm}\header{}{Miguel Vieyra Cruz}
+      {Ingeniero en Computación}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.18]{img/cv.png}
+  \section{Dirección}
+    Av. Aquiles Serdan Edfi. E-17 Depto. 302
+    UH. Miguel Hidalgo, Azcapotzalco CDMX.
+    ~
+  \section{Tel \& Skype}
+    +52 55 5502 0753
+    miguel.angel.vieyra.cruz
+    ~
+  \section{Correo Electronico}
+    \href{mailto:ing.miguelvieyra@gmail.com}{\textbf{ing.miguelvieyra@}\\gmail.com}
+    ~
+  %\section{Web \& Git}
+   % \href{http://mywebsite.com}{mywebsite.com}
+    %\href{https://bitbucket.org/mygit}{bitbucket.org/mygit}
+    %\href{https://github.com/mygit}{github.com/mygit}
+    %\href{https://gitlab.com/u/mygit}{gitlab.com/u/mygit}
+%    ~
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+ \section{Idiomas}
+    \textbf{Español}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Ingles}\includegraphics[scale=0.40]{img/2stars.png}
+    %\textbf{English}\includegraphics[scale=0.40]{img/4stars.png}
+    ~
+  \section{Tecnologías Oracle}
+    \smartdiagram[bubble diagram]{
+        \textbf{Oracle},
+        \textbf{AIA\vspace{3mm}},
+        \textbf{SOA\vspace{3mm}},
+        \textbf{OSB\vspace{3mm}},
+        \textbf{Middleware},
+        \textbf{Weblogic},
+        %\textbf{Integration Cloud},
+        \textbf{ODI\vspace{3mm}},
+        \textbf{BPM\vspace{3mm}},
+        \textbf{IDM\vspace{3mm}},
+        \textbf{ADF}
+    }
+    ~
+  %\section{Habilidades Personales}
+   % \smartdiagram[bubble diagram]{
+%        \textbf{Arquitectura},
+%        \textbf{Levantamiento}\\\textbf{de Requerimientos},
+%        \textbf{Solución}\\\textbf{de Problemas},
+%        \textbf{\vspace{2mm}Administración\vspace{2mm}},
+%        \textbf{Modelado}\\\textbf{de Soluciones}
+%    }
+%    ~
+\end{aside}
+~
+\section{Perfil}
+Profesional con 10 años de experiencia en tecnologías SOA, experiencia en \textbf{Governance, BPEL, BAM, BPM, OSB y web services}. Además, desarrollo web con \emph{frameworks} propietarios como \textbf{OAF y ADF}, así como \emph{open source} como struts, enfocado a la resolución de problemas y cumplimiento de objetivos y alcances en la industria, también con experiencia en el uso de metodologías como \textbf{Oracle OUM y SCRUM}. Siempre enfocado en la resolución de requerimientos que conviertan necesidades de la industria en activos. Experiencia en los ramos de Telecomunicaciones, Bancario y Retail\\
+
+\section{Certificaciones}
+\begin{entrylist}
+  \entry
+    {02/2018}
+    {Oracle SOA Suite 12c Certified Implementation Specialist}
+    {Oracle}
+    {\emph{Oracle Certified Specialist}}
+     \entry
+    {02/2018}
+    {Scrum Fundamentals Certified}
+    {SCRUMstudy}
+    {\emph{Certificate ID: 614590}}
+\end{entrylist}
+
+\section{Experiencia}
+\begin{entrylist}
+  \entry
+    {Ene18'-Abr18'}
+    {Consultor SOA Governance - Capgemini/Grupo Bimbo}
+    {SOAInt}
+    {Participación en la implementación del Modelo de Gobierno SOA, Elaboración de estándares de desarrollo para OSB, SOA y ODI, Elaboración de propuesta de arquitectura de inventario.\\}
+  \entry
+    {Nov16'-Ene18'}
+    {Coordinador SOA Governance - Zocalo}
+    {AT\&T México}
+    {Assestment SOA para obtener el nivel de adopción y establecimiento de un Roadmap de adopción. Recepción y revisión de código de Oracle Service Bus 12c para el proyecto Zocalo. Definición e implementación de ciclo de vida de servicios. Implementación de un repositorio de servicios. Apoyo en implementación de buenas prácticas y patrones de diseño SOA. Diseño de servicios SOA basados en arquitectura actual. Propuesta de nuevas Arquitecturas SOA. Implementación y configuración de servidor SOA y OSB 12c para el área de arquitectura empresarial.\\}
+  \entry
+    {Sep16'-Oct16'}
+    {Arquitecto de Soluciones - Move 2 Cloud Grupo Bimbo}
+    {Oracle}
+    {Conducción de talleres técnicos que identifiquen los requerimientos de integración y conversión de datos entre Oracle Fusion Apps (SCM, HCM, ERP y OTM) y los sistemas legados (Oracle Ebiz 11i y r12, IBM Maximo, Oracle VCP, etc.). Modelado de soluciones que permitan la integración y conversión de datos. Coordinación de equipo remoto de desarrollo. \\}
+  \entry
+    {Abr16'-Ago16'}
+    {Consultor Técnico/funcional - Omnicanal Banco del Bajío}
+    {Oracle}
+    {Levantamiento de requerimientos para la implementación de la suite de seguridad Oracle Identity Management\\}
+   
+\end{entrylist}
+\\
+\newpage
+
+\section{Experiencia Cont.}
+\begin{entrylist}
+  \entry
+    {Ene16'-Mar16'}
+    {Líder Técnico SOA - Dish}
+    {Oracle}
+    {Líder del equipo de integración interactuando directamente con el cliente para la atención de requerimientos específicos y coordinación de las actividades relacionadas con SOA, OSB, AIA y ODI. Interacción con soporte técnico para la resolución de temas de ambientes alojados en Oracle Cloud Services.}
+ \entry
+    {Nov15'-Dic16'}
+    {Consultor de soporte - Migración 12c SKY}
+    {Oracle}
+    {Apoyo en las tareas de migración entre versiones de productos Middleware. Resolución de incidencias apoyando a la revisión y administración de ambientes. Aplicación de parches y configuraciones en ambientes. Generación y revisión de documentos técnicos.}
+\entry
+    {Nov15'}
+    {Líder Técnico SOA - Evolucion 2015 Dish}
+    {Oracle}
+    {Líder del equipo de integración interactuando directamente con el cliente para la atención de requerimientos específicos y coordinación de las actividades relacionadas con SOA, OSB, AIA y ODI. Interacción con soporte técnico para la resolución de temas de ambientes alojados en Oracle Cloud Services.}
+    \entry
+    {Mar15'-Oct15'}
+    {Líder Técnico SOA - Implementación RODOD TotalPlay}
+    {Oracle}
+    {Coordinación y ejecución de actividades referentes a la implementación de RODOD para la integración de CRM con diferentes aplicativos, incluyendo OSM y BRM.}
+  \entry
+    {Ago12'-Feb15'}
+    {Líder Técnico SOA - Evolucion 2015 Dish}
+    {Oracle}
+    {Líder del equipo de integración interactuando directamente con el cliente para la atención de requerimientos específicos y coordinación de las actividades relacionadas con SOA, OSB, AIA y ODI. Interacción con soporte técnico para la resolución de temas de ambientes alojados en Oracle Cloud Services.\\}
+  \entry
+    {Ene12'-Jul12'}
+    {Consultor Técnico}
+    {Multisolusions}
+    {Consultor especializado en tecnologías Oracle\\}
+	\entry
+    {Ene07'-Dic11'}
+    {Consultor Técnico}
+    {Condor Consulting Services}
+    {Consultor especialidado en tecnologías Oracle\\}
+\end{entrylist}
+\\
+
+\section{Educación}
+\begin{entrylist}
+  \entry
+    {2015 - 2017}
+    {Maestria en Administración de Tecnologías de Información}
+    {Universidad Ixtlahuaca, anexa a la UAEMex\\}
+
+  \entry
+    {2000 - 2006}
+    {Ingeniería en Computación}
+    {Universidad Ixtlahuaca, anexa a la UAEMex\\}
+    
+\end{entrylist}
+%
+%\section{Honors \& Awards}
+%\begin{entrylist}
+%  \entry
+%    {10/2015}
+%    {Best swordsman duel}
+%    {Contest}
+%    {Lorem ipsum.\\
+%    \emph{Lorem ipsum}}
+%\end{entrylist}
+
+%\section{Certifications}
+%\begin{entrylist}
+%  \entry
+%    {02/2013}
+%    {Intro to Computer Science}
+%    {Udacity. E-learning}
+%    {\emph{Building a Python Search Engine}}
+%\end{entrylist}
+
+%\section{Other Info}
+%For the Italian job market:\\
+%\emph{Si autorizza il trattamento delle informazioni contenute nel curriculum in conformità alle disposizioni previste dal d.lgs. 196/2003. Si dichiara altresì di essere consapevole che, in caso di dichiarazioni non veritiere, si è passibili di sanzioni penali ai sensi del DPR 445/00 oltre alla revoca dei benefici eventualmente percepiti.}
+%\\
+%\begin{flushleft}
+%\emph{May 8th, 2016}
+%\end{flushleft}
+%\begin{flushright}
+%\emph{John Snow}
+%\end{flushright}
+
+\end{document}
