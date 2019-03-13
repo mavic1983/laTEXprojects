@@ -1,1 +1,1 @@
-"# laTEXprojects" 
+# laTEXprojects 
